@@ -1,0 +1,845 @@
+<html lang="en" style="box-sizing: border-box;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="robots" content="none">
+    <style>
+    .hljs-link,
+    .hljs-regexp {
+      color: #0e0eff;
+    }
+    </style><style>
+    .ft:hover {
+      background: rgba(15, 115, 12, 1) !important;
+    }
+    .fu:hover {
+      border-color: rgba(15, 115, 12, 1) !important;
+    }
+    </style><style>
+    @media all and (min-width: 728px) and (max-width: 903.98px) {
+      .d {
+        background-color: rgba(242, 242, 242, 1) !important;
+      }
+    
+      .e {
+        padding: 6px 0 40px 0;
+      }
+    
+      .o {
+        border: 1px solid rgba(230, 230, 230, 1);
+      }
+    
+      .p {
+        border-radius: 4px;
+      }
+    
+      .v {
+        padding: 28px 40px 0 40px !important;
+      }
+    
+      .aq {
+        font-size: 13px;
+      }
+    
+      .ar {
+        line-height: 18px;
+      }
+    
+      .bc {
+        margin-bottom: 5px !important;
+      }
+    
+      .bd {
+        margin-top: 25px !important;
+      }
+    
+      .bm {
+        padding: 0 40px !important;
+      }
+    
+      .bv {
+        font-size: 16px !important;
+      }
+    
+      .bw {
+        line-height: 24px !important;
+      }
+    
+      .cg {
+        margin-bottom: 24px !important;
+      }
+    
+      .ch {
+        margin-top: 24px !important;
+      }
+    
+      .cq {
+        display: inline-block;
+      }
+    
+      .cr {
+        float: right !important;
+      }
+    
+      .cs {
+        height: 144px !important;
+      }
+    
+      .ct {
+        width: 144px !important;
+      }
+    
+      .cu {
+        margin-bottom: 0 !important;
+      }
+    
+      .df {
+        width: 72% !important;
+      }
+    
+      .di {
+        margin-bottom: 4px !important;
+      }
+    
+      .dr {
+        font-size: 14px;
+      }
+    
+      .ds {
+        line-height: 20px;
+      }
+    
+      .ea {
+        margin-left: 44px !important;
+      }
+    
+      .ee {
+        font-size: 18px !important;
+      }
+    
+      .el {
+        width: 100% !important;
+      }
+    
+      .eq {
+        padding: 20px 40px 40px !important;
+      }
+    
+      .eu {
+        padding: 0px 40px 60px !important;
+      }
+    
+      .fc {
+        font-size: 24px;
+      }
+    
+      .fd {
+        line-height: 28px;
+      }
+    
+      .gb {
+        padding: 40px !important;
+      }
+    
+      .gf {
+        padding-bottom: 0 !important;
+      }
+    
+      .gg {
+        padding-top: 10px;
+      }
+    
+      .gm {
+        display: inline-block !important;
+      }
+    
+      .gr {
+        padding-top: 34px;
+      }
+    }
+    </style>
+    <style>
+    @media all and (min-width: 904px) and (max-width: 1079.98px) {
+      .f {
+        background-color: rgba(242, 242, 242, 1) !important;
+      }
+    
+      .g {
+        padding: 6px 0 40px 0;
+      }
+    
+      .q {
+        border: 1px solid rgba(230, 230, 230, 1);
+      }
+    
+      .r {
+        border-radius: 4px;
+      }
+    
+      .w {
+        padding: 28px 40px 0 40px !important;
+      }
+    
+      .as {
+        font-size: 13px;
+      }
+    
+      .at {
+        line-height: 18px;
+      }
+    
+      .be {
+        margin-bottom: 5px !important;
+      }
+    
+      .bf {
+        margin-top: 25px !important;
+      }
+    
+      .bn {
+        padding: 0 40px !important;
+      }
+    
+      .bx {
+        font-size: 16px !important;
+      }
+    
+      .by {
+        line-height: 24px !important;
+      }
+    
+      .ci {
+        margin-bottom: 24px !important;
+      }
+    
+      .cj {
+        margin-top: 24px !important;
+      }
+    
+      .cv {
+        display: inline-block;
+      }
+    
+      .cw {
+        float: right !important;
+      }
+    
+      .cx {
+        height: 144px !important;
+      }
+    
+      .cy {
+        width: 144px !important;
+      }
+    
+      .cz {
+        margin-bottom: 0 !important;
+      }
+    
+      .dg {
+        width: 72% !important;
+      }
+    
+      .dj {
+        margin-bottom: 4px !important;
+      }
+    
+      .dt {
+        font-size: 14px;
+      }
+    
+      .du {
+        line-height: 20px;
+      }
+    
+      .eb {
+        margin-left: 44px !important;
+      }
+    
+      .ef {
+        font-size: 18px !important;
+      }
+    
+      .em {
+        width: 100% !important;
+      }
+    
+      .er {
+        padding: 20px 40px 40px !important;
+      }
+    
+      .ev {
+        padding: 0px 40px 60px !important;
+      }
+    
+      .fe {
+        font-size: 24px;
+      }
+    
+      .ff {
+        line-height: 28px;
+      }
+    
+      .gc {
+        padding: 40px !important;
+      }
+    
+      .gh {
+        padding-bottom: 0 !important;
+      }
+    
+      .gi {
+        padding-top: 10px;
+      }
+    
+      .gn {
+        display: inline-block !important;
+      }
+    
+      .gs {
+        padding-top: 34px;
+      }
+    }
+    </style>
+    <style>
+    @media all and (min-width: 1080px) {
+      .h {
+        background-color: rgba(242, 242, 242, 1) !important;
+      }
+    
+      .i {
+        padding: 6px 0 40px 0;
+      }
+    
+      .s {
+        border: 1px solid rgba(230, 230, 230, 1);
+      }
+    
+      .t {
+        border-radius: 4px;
+      }
+    
+      .x {
+        padding: 28px 40px 0 40px !important;
+      }
+    
+      .au {
+        font-size: 13px;
+      }
+    
+      .av {
+        line-height: 18px;
+      }
+    
+      .bg {
+        margin-bottom: 5px !important;
+      }
+    
+      .bh {
+        margin-top: 25px !important;
+      }
+    
+      .bo {
+        padding: 0 40px !important;
+      }
+    
+      .bz {
+        font-size: 16px !important;
+      }
+    
+      .ca {
+        line-height: 24px !important;
+      }
+    
+      .ck {
+        margin-bottom: 24px !important;
+      }
+    
+      .cl {
+        margin-top: 24px !important;
+      }
+    
+      .da {
+        display: inline-block;
+      }
+    
+      .db {
+        float: right !important;
+      }
+    
+      .dc {
+        height: 144px !important;
+      }
+    
+      .dd {
+        width: 144px !important;
+      }
+    
+      .de {
+        margin-bottom: 0 !important;
+      }
+    
+      .dh {
+        width: 72% !important;
+      }
+    
+      .dk {
+        margin-bottom: 4px !important;
+      }
+    
+      .dv {
+        font-size: 14px;
+      }
+    
+      .dw {
+        line-height: 20px;
+      }
+    
+      .ec {
+        margin-left: 44px !important;
+      }
+    
+      .eg {
+        font-size: 18px !important;
+      }
+    
+      .en {
+        width: 100% !important;
+      }
+    
+      .es {
+        padding: 20px 40px 40px !important;
+      }
+    
+      .ew {
+        padding: 0px 40px 60px !important;
+      }
+    
+      .fg {
+        font-size: 24px;
+      }
+    
+      .fh {
+        line-height: 28px;
+      }
+    
+      .gd {
+        padding: 40px !important;
+      }
+    
+      .gj {
+        padding-bottom: 0 !important;
+      }
+    
+      .gk {
+        padding-top: 10px;
+      }
+    
+      .go {
+        display: inline-block !important;
+      }
+    
+      .gt {
+        padding-top: 34px;
+      }
+    }
+    </style>
+    <style>
+    @media all and (max-width: 551.98px) {
+      .am {
+        font-size: 11px;
+      }
+    
+      .an {
+        line-height: 14px;
+      }
+    
+      .dn {
+        font-size: 16px;
+      }
+    
+      .do {
+        line-height: 24px;
+      }
+    
+      .ey {
+        font-size: 18px;
+      }
+    
+      .ez {
+        line-height: 21px;
+      }
+    }
+    </style><style>
+    @media all and (min-width: 552px) and (max-width: 727.98px) {
+      .ao {
+        font-size: 11px;
+      }
+    
+      .ap {
+        line-height: 14px;
+      }
+    
+      .dp {
+        font-size: 16px;
+      }
+    
+      .dq {
+        line-height: 24px;
+      }
+    
+      .fa {
+        font-size: 18px;
+      }
+    
+      .fb {
+        line-height: 21px;
+      }
+    }
+    </style>
+    <link id="glyph_preload_link" rel="preload" as="style" type="text/css" href="https://glyph.medium.com/css/unbound.css">
+    <link id="glyph_link" rel="stylesheet" type="text/css" href="https://glyph.medium.com/css/unbound.css">
+</head>
+<body style="margin: 0; padding: 0;">
+    <div class="c d e f g h i" style="background-color: rgba(255, 255, 255, 1);">
+    <table class="j k l m" role="presentation" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; width: 100%; max-width: 680px;" width="100%">
+        <tbody>
+            <tr>
+                <td class="l n" style="width: 100%; min-width: 100%;" width="100%">
+                    <img src="https://medium.com/_/stat?event=email.opened&amp;emailId=2f274f2a-96fc-4871-9379-80c68c096bf5&amp;source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" width="1" height="1" alt>
+                    <div class="a b" style="font-family: sohne, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: rgba(25, 25, 25, 1);">
+                        <div class="c o p q r s t" style="background-color: rgba(255, 255, 255, 1);">
+                            <div class="u v w x" style="padding: 12px 27px 0 27px;">
+                                <div class="y" style="text-align: left;">
+                                <div class><div class="z ab" style="display: inline-block; vertical-align: middle;">
+                                    <table cellspacing="0" class="ac" style="border-spacing: 0;">
+                                        <tr>
+                                            <td class="ae" style="max-width: 21px;"><a href="https://medium.com/@starky374?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: none;"><img alt="Starky Paulino" class="ag ah ai aj" src="https://miro.medium.com/fit/c/64/64/0*DKL5Gv4XePzRmoJh.jpg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></td>
+                                            <td class="af" style="vertical-align: top;" valign="top">
+                                                <img alt="Member star" class src="https://miro.medium.com/proxy/1*oDGnEKkdZpEHIUYOqDRkrA.png" width="17" height="17"></td></tr>
+                                            </table>
+                                        </div>
+                                        <div class="z ak ab" style="display: inline-block; vertical-align: middle; padding-left: 9px;">
+                                            <div class="al am an ao ap aq ar as at au av aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">
+                                            <a href="https://medium.com/@starky374?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: none;">Stories for <span style="font-weight:700">Starky Paulino</span></a></div>
+                                            <div class="al am an ao ap aq ar as at au av aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">
+                                                <span class="al am an ao ap aq ar as at au av ax" style="font-weight: 400; color: rgba(117, 117, 117, 1);">
+                                                    <a href="https://medium.com/@starky374?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: none;">@starky374</a></span>
+                                                    <span class="al am an ao ap aq ar as at au av ay" style="font-weight: 400; color: rgba(26, 137, 23, 1);">
+                                                        <span class="az ba" style="padding-left: 4px; padding-right: 4px;">·</span>
+                                                        <a href="https://medium.com/@starky374?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: none;">Member</a></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bb bc bd be bf bg bh bi bj" style="margin-bottom: 8px; margin-top: 22px; text-align: center;">
+                                                            <a href="https://medium.com/?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" aria-label="Medium homepage link" style="color: inherit; text-decoration: none;"><img alt="Medium daily digest" class="l bk" src="https://miro.medium.com/max/1200/4*pUIfRlZh07mLXKHFllcZSw.png" width="600" style="width: 100%; min-width: 400px;"></a></div>
+                                                        </div>
+                                                        <div class="bl bm bn bo" style="padding: 0 27px;">
+                                                            <div class="bp bq l" style="width: 100%; border-bottom: 1px solid rgba(117, 117, 117, 1); height: 0px;"></div>
+                                                            <div class="br bs" style="margin-bottom: 11px; margin-top: 11px;"><p class="bt bu bv bw bx by bz ca cb aw cc" style="margin: 0; color: rgba(41, 41, 41, 1); font-weight: 700; font-size: 18px; line-height: 24px; text-transform: uppercase;">Today&#x27;s highlights</p></div>
+                                                            <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div>
+                                                            <div>
+                                                                <div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;">
+                                                                    <a href="https://medium.com/@fastinfoclass/how-listening-ted-talks-help-to-improve-spoken-english-skills-39d57cbb75c0?source=email-4cbe58367505-1684829857390-digest.reader--39d57cbb75c0----0-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="g5aSMer9" style="color: inherit; text-decoration: none;">
+                                                                        <div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*UGceLhti2gaV76h-Ksfknw.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a>
+                                            <div class="l df dg dh" style="width: 100%;">
+                                                <div class="bb di dj dk" style="margin-bottom: 8px;">
+                                                    <div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;">
+                                                        <a href="https://medium.com/@fastinfoclass?source=email-4cbe58367505-1684829857390-digest.reader--39d57cbb75c0----0-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                                            <img alt="FastInfo Class" class="ag ah ai aj" src="https://miro.medium.com/fit/c/64/64/1*eLNCLK0L3xyyCyL8plU4WA.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;">
+                                </a>
+                            </div>
+                            <div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;">
+                                <div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b>
+                                    <a href="https://medium.com/@fastinfoclass?source=email-4cbe58367505-1684829857390-digest.reader--39d57cbb75c0----0-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">FastInfo Class</a></b>
+                                    <span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span>
+                                    <div class="z" style="display: inline-block;">
+                                        <span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">6 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;">
+                                            <a href="https://medium.com/@fastinfoclass/how-listening-ted-talks-help-to-improve-spoken-english-skills-39d57cbb75c0?source=email-4cbe58367505-1684829857390-digest.reader--39d57cbb75c0----0-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;">
+                                                <div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="g5aSMer9">How Listening TED Talks Help To Improve Spoken English Skills</b></div>
+                                            </div>
+                                            <div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Are you looking for an enjoyable and effective way to improve your spoken English skills? If so, TED Talks…</div></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);">
+
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;">
+                                                <a href="https://medium.com/@frank-andrade/bye-bye-chatgpt-ai-tools-better-than-chatgpt-but-few-people-are-using-them-eac93a3627cc?source=email-4cbe58367505-1684829857390-digest.reader-76436a11a2b0-eac93a3627cc----1-59------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="SCsN_FNE" style="color: inherit; text-decoration: none;">
+                                                    <div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*pPDGinb8Z17nXMmifwIESw.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a>
+                                                    <div class="l df dg dh" style="width: 100%;">
+                                                        <div class="bb di dj dk" style="margin-bottom: 8px;"><div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/artificial-corner?source=email-4cbe58367505-1684829857390-digest.reader-76436a11a2b0-eac93a3627cc----1-59------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                                            <img alt="Artificial Corner" class="ej aj ai ag" src="https://miro.medium.com/fit/c/64/64/1*e1-WDgc0KCMKp_rHX9TyQQ.png" width="32" height="32" style="display: block; height: 32px; width: 32px; border-radius: 4px;"></a></div>
+                                                            <div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;">
+                                                                <div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@frank-andrade?source=email-4cbe58367505-1684829857390-digest.reader-76436a11a2b0-eac93a3627cc----1-59------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">The PyCoach</a> in <a href="https://medium.com/artificial-corner?source=email-4cbe58367505-1684829857390-digest.reader-76436a11a2b0-eac93a3627cc----1-59------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Artificial Corner</a></b>
+                                                                    <span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span>
+                                                                    <div class="z" style="display: inline-block;">
+                                                                        <span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">5 min read</span>
+                                                                        <div class="z ek" style="display: inline-block; margin-left: 6px;">
+                                                                            <img alt="Member only content" class="ab" src="https://miro.medium.com/fit/c/30/30/1*Zz6z7U4dGjkNKQy1cxU7iw@2x.png" width="15" height="15" style="vertical-align: middle;"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;">
+                                                                <a href="https://medium.com/@frank-andrade/bye-bye-chatgpt-ai-tools-better-than-chatgpt-but-few-people-are-using-them-eac93a3627cc?source=email-4cbe58367505-1684829857390-digest.reader-76436a11a2b0-eac93a3627cc----1-59------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                                                <div class="bb" style="margin-bottom: 8px;">
+                                                                    <div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="SCsN_FNE">Bye-bye ChatGPT: AI Tools As Good As ChatGPT (But Few People Are Using Them)</b>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Go beyond ChatGPT with these powerful AI tools.</div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div>
+                                            </div>
+                                            <div>
+                                                <div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;">
+                                                    <a href="https://medium.com/@cpozasg1103/best-vs-code-extensions-for-productivity-9e02e1d39ef8?source=email-4cbe58367505-1684829857390-digest.reader--9e02e1d39ef8----2-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="FOmFKfme" style="color: inherit; text-decoration: none;">
+                                                        <div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/0*gMhPU_ZSQeVgFnNT); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a>
+                                                        <div class="l df dg dh" style="width: 100%;">
+                                                            <div class="bb di dj dk" style="margin-bottom: 8px;">
+                                                                <div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@cpozasg1103?source=email-4cbe58367505-1684829857390-digest.reader--9e02e1d39ef8----2-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                                            <img alt="Camila Pozas García" class="ag ah ai aj" src="https://miro.medium.com/fit/c/64/64/1*mseWiBF9DYZvBYBGX8u9NQ.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div>
+                                                            <div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;">
+                                                                <div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@cpozasg1103?source=email-4cbe58367505-1684829857390-digest.reader--9e02e1d39ef8----2-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Camila Pozas García</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span>
+                                                                    <div class="z" style="display: inline-block;">
+                                                                        <span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">8 min read</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;">
+                                                            <a href="https://medium.com/@cpozasg1103/best-vs-code-extensions-for-productivity-9e02e1d39ef8?source=email-4cbe58367505-1684829857390-digest.reader--9e02e1d39ef8----2-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;">
+                                                            <div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="FOmFKfme">Best VS Code Extensions for Productivity</b></div>
+                                                                    </div>
+                                                                    <div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">As a developer, you probably spend a lot of time using Visual Studio Code (VS Code) to write, debug, and test…</div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;">
+                                                        <a href="https://medium.com/@olivermeredithcox/the-purpose-of-a-system-is-how-we-shape-it-e1917d738c7?source=email-4cbe58367505-1684829857390-digest.reader-138adf9c44c-e1917d738c7----3-102------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="1HYgdB4S" style="color: inherit; text-decoration: none;">
+                                                            <div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*7fFQwj-Uf8pvoDu4tFMKgA.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a>
+                                                            <div class="l df dg dh" style="width: 100%;">
+                                                                <div class="bb di dj dk" style="margin-bottom: 8px;">
+                                                                    <div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;">
+                                                                        <a href="https://medium.com/user-experience-design-1?source=email-4cbe58367505-1684829857390-digest.reader-138adf9c44c-e1917d738c7----3-102------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                                                            <img alt="UX Collective" class="ej aj ai ag" src="https://miro.medium.com/fit/c/64/64/1*mDhF9X4VO0rCrJvWFatyxg.png" width="32" height="32" style="display: block; height: 32px; width: 32px; border-radius: 4px;"></a></div>
+                                                                            <div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;">
+                                                                                <div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@olivermeredithcox?source=email-4cbe58367505-1684829857390-digest.reader-138adf9c44c-e1917d738c7----3-102------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Oliver Meredith Cox</a> in <a href="https://medium.com/user-experience-design-1?source=email-4cbe58367505-1684829857390-digest.reader-138adf9c44c-e1917d738c7----3-102------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">UX Collective</a></b>
+                                                                                    <span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span>
+                                                    <div class="z" style="display: inline-block;">
+                                                        <span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">21 min read</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;">
+                                            <a href="https://medium.com/@olivermeredithcox/the-purpose-of-a-system-is-how-we-shape-it-e1917d738c7?source=email-4cbe58367505-1684829857390-digest.reader-138adf9c44c-e1917d738c7----3-102------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;">
+                                            <div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="1HYgdB4S">The purpose of a system is how we shape it</b></div>
+                                        </div>
+                                        <div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">We are not masters of our information, but we can be if we build information systems shaped like human…</div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;">
+                                        <a href="https://medium.com/@cannon_circuit/top-10-math-ideas-every-programmer-should-master-8c3c8ccfc175?source=email-4cbe58367505-1684829857390-digest.reader-4b3a1ed4f11c-8c3c8ccfc175----4-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="TdQrwap9" style="color: inherit; text-decoration: none;">
+                                            <div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/0*i7sfON4GnDh6P-aJ); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a>
+                                            <div class="l df dg dh" style="width: 100%;">
+                                                <div class="bb di dj dk" style="margin-bottom: 8px;">
+                                                    <div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;">
+                                                        <a href="https://medium.com/javascript-in-plain-english?source=email-4cbe58367505-1684829857390-digest.reader-4b3a1ed4f11c-8c3c8ccfc175----4-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                                <img alt="JavaScript in Plain English" class="ej aj ai ag" src="https://miro.medium.com/fit/c/64/64/1*yUNfohs9jA6GCDmyCYJTvA@2x.png" width="32" height="32" style="display: block; height: 32px; width: 32px; border-radius: 4px;"></a></div>
+                                                <div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;">
+                                                <div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b>
+                                                    <a href="https://medium.com/@cannon_circuit?source=email-4cbe58367505-1684829857390-digest.reader-4b3a1ed4f11c-8c3c8ccfc175----4-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">CodeCircuit</a> in <a href="https://medium.com/javascript-in-plain-english?source=email-4cbe58367505-1684829857390-digest.reader-4b3a1ed4f11c-8c3c8ccfc175----4-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">JavaScript in Plain English</a></b>
+                                                    <span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span>
+                                                    <div class="z" style="display: inline-block;">
+                                                        <span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">14 min read</span>
+                                                        <div class="z ek" style="display: inline-block; margin-left: 6px;">
+                                                            <img alt="Member only content" class="ab" src="https://miro.medium.com/fit/c/30/30/1*Zz6z7U4dGjkNKQy1cxU7iw@2x.png" width="15" height="15" style="vertical-align: middle;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;">
+                                        <a href="https://medium.com/@cannon_circuit/top-10-math-ideas-every-programmer-should-master-8c3c8ccfc175?source=email-4cbe58367505-1684829857390-digest.reader-4b3a1ed4f11c-8c3c8ccfc175----4-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                            <div class="bb" style="margin-bottom: 8px;">
+                                                <div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="TdQrwap9">Top 10 Math Ideas Every Programmer Should Master</b></div>
+                                    </div>
+                                    <div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">The Ultimate Guide to Math for Programmers: 10 Concepts You Need to Know</div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div>
+                                </div>
+                                <div>
+                                    <div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;">
+                                                    <a href="https://medium.com/@arnabsen1729/landing-a-google-swe-internship-interview-experience-and-preparation-journey-2389604ca6e1?source=email-4cbe58367505-1684829857390-digest.reader--2389604ca6e1----5-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="xQBwuwbq" style="color: inherit; text-decoration: none;">
+                                                        <div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/0*fJovY9wgUKX57TQB); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a>
+                                                        <div class="l df dg dh" style="width: 100%;">
+                                                            <div class="bb di dj dk" style="margin-bottom: 8px;">
+                                                            <div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;">
+                                                                <a href="https://medium.com/@arnabsen1729?source=email-4cbe58367505-1684829857390-digest.reader--2389604ca6e1----5-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><img alt="Arnab Sen" class="ag ah ai aj" src="https://miro.medium.com/fit/c/64/64/1*pWuiVITabRCww-nTc593MQ.png" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div>
+                                                                <div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b>
+                                                            <a href="https://medium.com/@arnabsen1729?source=email-4cbe58367505-1684829857390-digest.reader--2389604ca6e1----5-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Arnab Sen</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span>
+                                                            <div class="z" style="display: inline-block;">
+                                                                <span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">13 min read</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;">
+                                                    <a href="https://medium.com/@arnabsen1729/landing-a-google-swe-internship-interview-experience-and-preparation-journey-2389604ca6e1?source=email-4cbe58367505-1684829857390-digest.reader--2389604ca6e1----5-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                                        <div class="bb" style="margin-bottom: 8px;">
+                                                            <div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;">
+                                                                <b id="xQBwuwbq">Landing a Google SWE Internship: Interview Experience and preparation journey</b></div>
+                                                            </div>
+                                                            <div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Even though, there is a plethora of articles on Google SWE Internship interview experience online, I am still…</div></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;">
+                                                            <a href="https://medium.com/@smitasenn/7-best-programming-books-of-all-time-9b7126d8dcad?source=email-4cbe58367505-1684829857390-digest.reader-8db41d348b31-9b7126d8dcad----6-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="F-8Ntn8R" style="color: inherit; text-decoration: none;"><div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/0*cknlltOrgGUurQ0b.jpg); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a>
+                                                        <div class="l df dg dh" style="width: 100%;">
+                                                            <div class="bb di dj dk" style="margin-bottom: 8px;">
+                                                                <div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;">
+                                                                    <a href="https://medium.com/catalysts-reachout?source=email-4cbe58367505-1684829857390-digest.reader-8db41d348b31-9b7126d8dcad----6-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><img alt="Catalysts Reachout" class="ej aj ai ag" src="https://miro.medium.com/fit/c/64/64/1*G0yKw-TNeKygmUhcrzdRNw.jpeg" width="32" height="32" style="display: block; height: 32px; width: 32px; border-radius: 4px;"></a>
+                                                                </div>
+                                                                <div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b>
+                                                                        <a href="https://medium.com/@smitasenn?source=email-4cbe58367505-1684829857390-digest.reader-8db41d348b31-9b7126d8dcad----6-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Smita Sen</a> in <a href="https://medium.com/catalysts-reachout?source=email-4cbe58367505-1684829857390-digest.reader-8db41d348b31-9b7126d8dcad----6-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Catalysts Reachout</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">4 min read</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@smitasenn/7-best-programming-books-of-all-time-9b7126d8dcad?source=email-4cbe58367505-1684829857390-digest.reader-8db41d348b31-9b7126d8dcad----6-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;"><div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="F-8Ntn8R">7 Best Programming Books of All Time</b></div></div><div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Hello readers, I am back again with an interesting topic for you which will tell you about 7 best programming…</div></a></div></div></div><div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@mvsg/6-advanced-typescript-tricks-for-clean-code-90cee774dbf3?source=email-4cbe58367505-1684829857390-digest.reader--90cee774dbf3----7-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="Z8zhwTRU" style="color: inherit; text-decoration: none;"><div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*moJeTvW97yShLB7URRj5Kg.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l df dg dh" style="width: 100%;"><div class="bb di dj dk" style="margin-bottom: 8px;"><div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@mvsg?source=email-4cbe58367505-1684829857390-digest.reader--90cee774dbf3----7-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><img alt="Marcos Vinicius Gouvea" class="ag ah ai aj" src="https://miro.medium.com/fit/c/64/64/1*jybQxPM3Og0OO-iRlBlxLQ.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@mvsg?source=email-4cbe58367505-1684829857390-digest.reader--90cee774dbf3----7-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Marcos Vinicius Gouvea</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">10 min read</span></div></div></div></div><div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@mvsg/6-advanced-typescript-tricks-for-clean-code-90cee774dbf3?source=email-4cbe58367505-1684829857390-digest.reader--90cee774dbf3----7-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;"><div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="Z8zhwTRU">6 Advanced TypeScript tricks for Clean Code</b></div></div><div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Six advanced TypeScript tips will be covered here, along with examples showing how each one works step by…</div></a></div></div></div><div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@ohadkoren/5-essential-points-you-should-be-familiar-with-as-a-javascript-developer-c3d11890f366?source=email-4cbe58367505-1684829857390-digest.reader-db65ca41babe-c3d11890f366----8-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="zbLdVN2B" style="color: inherit; text-decoration: none;"><div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/0*JXluseoB3M4kvfJO); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l df dg dh" style="width: 100%;"><div class="bb di dj dk" style="margin-bottom: 8px;"><div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/att-israel?source=email-4cbe58367505-1684829857390-digest.reader-db65ca41babe-c3d11890f366----8-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><img alt="AT&amp;T Israel Tech Blog" class="ej aj ai ag" src="https://miro.medium.com/fit/c/64/64/1*pEvrsBPfdGOe4uKO4qLfxg.png" width="32" height="32" style="display: block; height: 32px; width: 32px; border-radius: 4px;"></a></div><div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@ohadkoren?source=email-4cbe58367505-1684829857390-digest.reader-db65ca41babe-c3d11890f366----8-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Ohad Koren</a> in <a href="https://medium.com/att-israel?source=email-4cbe58367505-1684829857390-digest.reader-db65ca41babe-c3d11890f366----8-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">AT&amp;T Israel Tech Blog</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">10 min read</span></div></div></div></div><div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@ohadkoren/5-essential-points-you-should-be-familiar-with-as-a-javascript-developer-c3d11890f366?source=email-4cbe58367505-1684829857390-digest.reader-db65ca41babe-c3d11890f366----8-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;"><div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="zbLdVN2B">5 Essential Points You Should Be Familiar With as a JavaScript Developer</b></div></div><div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">In this article we will be discussing some JavaScript topics, that in my opinion every developer should know.</div></a></div></div></div>
+                                                        <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;">
+                                                            <a href="https://medium.com/@ben.dev.io/design-patterns-in-node-js-227673162879?source=email-4cbe58367505-1684829857390-digest.reader--227673162879----9-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="ZOh9pmt6" style="color: inherit; text-decoration: none;">
+                                                                <div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*3_SVY3ojQeyk9rfbilOY7w.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a>
+                                                            <div class="l df dg dh" style="width: 100%;">
+                                                                <div class="bb di dj dk" style="margin-bottom: 8px;">
+                                                                <div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;">
+                                                                    <a href="https://medium.com/@ben.dev.io?source=email-4cbe58367505-1684829857390-digest.reader--227673162879----9-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><img alt="Ben Mishali" class="ag ah ai aj" src="https://miro.medium.com/fit/c/64/64/1*JNiTPHKRBmoiVyrhXtzXRw.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div>
+                                                                    <div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;">
+                                                                        <div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@ben.dev.io?source=email-4cbe58367505-1684829857390-digest.reader--227673162879----9-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Ben Mishali</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span>
+                                                                            <div class="z" style="display: inline-block;">
+                                                                                <span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">5 min read</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;">
+                                                                <a href="https://medium.com/@ben.dev.io/design-patterns-in-node-js-227673162879?source=email-4cbe58367505-1684829857390-digest.reader--227673162879----9-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;"><div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="ZOh9pmt6">Design Patterns in Node.js</b></div>
+                                                            </div>
+                                                            <div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Introduction</div></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div>
+                                                            <div>
+                                                                <div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;">
+                                                                    <a href="https://medium.com/@andrewbaisden/51-ai-tools-you-should-be-using-for-life-programming-content-creation-and-everything-else-a07529955e8e?source=email-4cbe58367505-1684829857390-digest.reader-ab34385406b1-a07529955e8e----10-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="d7dFpJbW" style="color: inherit; text-decoration: none;">
+                                                                        <div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*jqIBUeuHUzVAHL270tWsyA.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l df dg dh" style="width: 100%;"><div class="bb di dj dk" style="margin-bottom: 8px;">
+                                                                            <div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;">
+                                                                                <a href="https://medium.com/venturehq?source=email-4cbe58367505-1684829857390-digest.reader-ab34385406b1-a07529955e8e----10-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><img alt="Venture" class="ej aj ai ag" src="https://miro.medium.com/fit/c/64/64/1*gk_RDbHlzubJqRkN-BgRVw.png" width="32" height="32" style="display: block; height: 32px; width: 32px; border-radius: 4px;"></a></div><div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;">
+                                                                                    <div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b>
+                                                                                        <a href="https://medium.com/@andrewbaisden?source=email-4cbe58367505-1684829857390-digest.reader-ab34385406b1-a07529955e8e----10-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Andrew Baisden</a> in <a href="https://medium.com/venturehq?source=email-4cbe58367505-1684829857390-digest.reader-ab34385406b1-a07529955e8e----10-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Venture</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">9 min read</span></div></div></div></div><div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@andrewbaisden/51-ai-tools-you-should-be-using-for-life-programming-content-creation-and-everything-else-a07529955e8e?source=email-4cbe58367505-1684829857390-digest.reader-ab34385406b1-a07529955e8e----10-98------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;"><div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="d7dFpJbW">51 AI Tools You Should Be Using For Life, Programming, Content Creation and…</b></div></div><div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">If you enjoy this topic, you will probably like my articles, tweets, and stuff. If you’re wondering, check…</div></a></div></div></div><div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@ishratumar/18-important-javascript-string-methods-for-developers-7f6d59eac522?source=email-4cbe58367505-1684829857390-digest.reader-d3a191ac6ed-7f6d59eac522----11-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="BglpRkXO" style="color: inherit; text-decoration: none;"><div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*Q3NbB9y1hWd3XEv2pObhHQ.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l df dg dh" style="width: 100%;"><div class="bb di dj dk" style="margin-bottom: 8px;"><div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/javarevisited?source=email-4cbe58367505-1684829857390-digest.reader-d3a191ac6ed-7f6d59eac522----11-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                                            <img alt="Javarevisited" class="ej aj ai ag" src="https://miro.medium.com/fit/c/64/64/1*ceHirGi683U9Xn6tAlr0jQ.jpeg" width="32" height="32" style="display: block; height: 32px; width: 32px; border-radius: 4px;"></a></div>
+                                                            <div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;">
+                                                                <div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b>
+                                                                    <a href="https://medium.com/@ishratumar?source=email-4cbe58367505-1684829857390-digest.reader-d3a191ac6ed-7f6d59eac522----11-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Ishrat Umar</a> in <a href="https://medium.com/javarevisited?source=email-4cbe58367505-1684829857390-digest.reader-d3a191ac6ed-7f6d59eac522----11-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Javarevisited</a></b>
+                                                                    <span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span>
+                                                                    <div class="z" style="display: inline-block;">
+                                                                        <span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">4 min read</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@ishratumar/18-important-javascript-string-methods-for-developers-7f6d59eac522?source=email-4cbe58367505-1684829857390-digest.reader-d3a191ac6ed-7f6d59eac522----11-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;"><div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="BglpRkXO">18 important JavaScript string methods for developers</b></div></div><div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Master JavaScript string manipulation for effective web development</div></a></div></div></div><div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@choubey/express-vs-fastify-vs-hapi-vs-koa-hello-world-performance-comparison-dd8cd6866bdd?source=email-4cbe58367505-1684829857390-digest.reader-cca06f8d4889-dd8cd6866bdd----12-99------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="YoDOi1DE" style="color: inherit; text-decoration: none;"><div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*1sq2ay7tfVj6-JKFeEk_ww.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l df dg dh" style="width: 100%;"><div class="bb di dj dk" style="margin-bottom: 8px;"><div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/deno-the-complete-reference?source=email-4cbe58367505-1684829857390-digest.reader-cca06f8d4889-dd8cd6866bdd----12-99------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><img alt="Tech Tonic" class="ej aj ai ag" src="https://miro.medium.com/fit/c/64/64/1*ckcQH2rH68rr5FcbJKUTmQ.png" width="32" height="32" style="display: block; height: 32px; width: 32px; border-radius: 4px;"></a></div><div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@choubey?source=email-4cbe58367505-1684829857390-digest.reader-cca06f8d4889-dd8cd6866bdd----12-99------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Mayank Choubey</a> in <a href="https://medium.com/deno-the-complete-reference?source=email-4cbe58367505-1684829857390-digest.reader-cca06f8d4889-dd8cd6866bdd----12-99------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Tech Tonic</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">6 min read</span></div></div></div></div><div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@choubey/express-vs-fastify-vs-hapi-vs-koa-hello-world-performance-comparison-dd8cd6866bdd?source=email-4cbe58367505-1684829857390-digest.reader-cca06f8d4889-dd8cd6866bdd----12-99------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;"><div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="YoDOi1DE">Express vs Fastify vs Hapi vs Koa: Hello world performance comparison</b></div></div><div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Find out which framework is the fastest for a simple hello world case: Express, Fastify, Hapi, or Koa</div></a></div></div></div><div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><div class="l el em en" style="width: 100%;"><div class="bb di dj dk" style="margin-bottom: 8px;"><div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@utkarshagarwal101?source=email-4cbe58367505-1684829857390-digest.reader--3093db45596b----13-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><img alt="Utkarshagarwal" class="ag ah ai aj" src="https://miro.medium.com/fit/c/64/64/0*XQ092O-5vlgOdIxi" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@utkarshagarwal101?source=email-4cbe58367505-1684829857390-digest.reader--3093db45596b----13-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Utkarshagarwal</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">5 min read</span></div></div></div></div><div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@utkarshagarwal101/zomato-sde-backend-interview-experience-off-campus-intern-fte-offer-3093db45596b?source=email-4cbe58367505-1684829857390-digest.reader--3093db45596b----13-58------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><div class="bb" style="margin-bottom: 8px;"><div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="0_X1--Rv">Zomato SDE (Backend) Interview Experience | Off Campus | Intern + FTE Offer</b></div></div><div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Hi Everyone 👋</div></a></div></div></div><div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="ce cf cg ch ci cj ck cl cm" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@ymc9/how-to-learn-learn-faster-and-even-faster-792f29586ea?source=email-4cbe58367505-1684829857390-digest.reader-d0b105d10f0a-792f29586ea----14-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" aria-labelledby="7BAwRCfl" style="color: inherit; text-decoration: none;"><div class="cn co l cp cq cr cs ct cu cv cw cx cy cz da db dc dd de" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*M2mz4j004ZO73hB5RKwRow.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l df dg dh" style="width: 100%;"><div class="bb di dj dk" style="margin-bottom: 8px;"><div class="z dl ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/better-programming?source=email-4cbe58367505-1684829857390-digest.reader-d0b105d10f0a-792f29586ea----14-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;"><img alt="Better Programming" class="ej aj ai ag" src="https://miro.medium.com/fit/c/64/64/1*QNoA3XlXLHz22zQazc0syg.png" width="32" height="32" style="display: block; height: 32px; width: 32px; border-radius: 4px;"></a></div><div class="z dm ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@ymc9?source=email-4cbe58367505-1684829857390-digest.reader-d0b105d10f0a-792f29586ea----14-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Yiming Cao</a> in <a href="https://medium.com/better-programming?source=email-4cbe58367505-1684829857390-digest.reader-d0b105d10f0a-792f29586ea----14-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">Better Programming</a></b><span class="dx dy" style="padding-left: 6px; padding-right: 6px;">·</span>
+                                                                        <div class="z" style="display: inline-block;">
+                                                                        <span class="al dn do dp dq dr ds dt du dv dw aw" style="font-weight: 400; color: rgba(41, 41, 41, 1);">10 min read</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="z dz ea eb ec" style="display: inline-block; margin-left: 0px;">
+                                                            <a href="https://medium.com/@ymc9/how-to-learn-learn-faster-and-even-faster-792f29586ea?source=email-4cbe58367505-1684829857390-digest.reader-d0b105d10f0a-792f29586ea----14-83------------------2f274f2a_96fc_4871_9379_80c68c096bf5-1" style="color: inherit; text-decoration: none;">
+                                                            <div class="bb" style="margin-bottom: 8px;">
+                                                                <div class="al ed ee bw ef by eg ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;">
+                                                                    <b id="7BAwRCfl">8 Meta-learning Tips To Grow Your Skills as a Software Engineer</b></div>
+                                                                </div>
+                                                                <div class="al ei bv bw bx by bz ca eh aw" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">How to find opportunities and maximize gain</div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cd bq l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div>
+                                        <div class="eo ep eq er es" style="background-color: #FAFAFA; padding: 20px 27px 40px;"></div>
+                                        <div class="eo et eu ev ew bj" style="text-align: center; background-color: #FAFAFA; padding: 0px 27px 54px;">
+                                            <h2 class="al ex ey ez fa fb fc fd fe ff fg fh fi" style="margin: 0; font-weight: 400; font-family: Georgia, serif; color: rgba(8, 8, 8, 1);">See more of what you like and less of what you don’t.</h2>
+                                            <div class="fj" style="padding-top: 16px;">
+                                                <a class="fk fl fm z fn bj fo fp fq fr fs ft fu fv al fw cb" href="https://medium.com/me/missioncontrol?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="display: inline-block; font-weight: 400; text-align: center; line-height: 24px; border-width: 1px; border-style: solid; box-sizing: border-box; text-decoration: none; padding: 9px 20px; background: rgba(26, 137, 23, 1); border-color: rgba(26, 137, 23, 1); color: rgba(255, 255, 255, 1); fill: rgba(255, 255, 255, 1); border-radius: 99em; font-size: 16px;">Control your recommendations</a>
+                                            </div>
+                                            </div>
+                                            <div class="fy fz ga gb gc gd" style="background-color: rgba(0, 0, 0, 1); border-radius: 0 0 4px 4px; padding: 32px 27px;">
+                                                <div class="z ge gf gg gh gi gj gk" style="display: inline-block; padding-bottom: 12px;">
+                                                    <h2 class="bt fw gl fr" style="margin: 0; font-weight: 700; color: rgba(255, 255, 255, 1); font-size: 16px; line-height: 20px;">Read from anywhere.</h2></div><div class="ag gm cr gn cw go db gp" style="display: block; float: none;">
+                                                        <div class="z gq" style="display: inline-block; padding-right: 12px;"><a class="z" href="https://itunes.apple.com/app/medium-everyones-stories/id828256236?pt=698524&amp;mt=8&amp;source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: none; display: inline-block;">
+                                                        <img alt="Get Medium on the App Store" class src="https://miro.medium.com/proxy/1*CXKdDEfFShoF6Azy5V8ZKQ@2x.png" width="120" height="40"></a>
+                                                    </div>
+                                                    <a class="z" href="https://play.google.com/store/apps/details?id=com.medium.reader&amp;source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: none; display: inline-block;"><img alt="Get Medium on Google Play" class src="https://miro.medium.com/proxy/1*D-oULOaPtKR8A1jatsII4w@2x.png" width="134.17" height="40"></a></div>
+                                                    <div class="gr gs gt gu" style="padding: 20px 0px;">
+                                                        <div class="bp bq l" style="width: 100%; border-bottom: 1px solid rgba(117, 117, 117, 1); height: 0px;"></div>
+                                                    </div>
+                                                    <div class="fx" style="clear: both;">
+                                                        <div class="y" style="text-align: left;">
+                                                            <div class="al gv gl fr" style="font-weight: 400; color: rgba(255, 255, 255, 1); line-height: 20px; font-size: 13px;">
+                                                                <div class>Sent by <a href="https://medium.com/?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: none;">Medium</a>
+                                                                    <span class="az ba" style="padding-left: 4px; padding-right: 4px;">·</span>Medium, 548 Market St, PMB 42061, San Francisco, CA 94104</div>
+                                                    <a class="gw" href="https://medium.com/me/email-settings/4cbe58367505/3e98b8802f7c?type=social&amp;source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: underline;">Unsubscribe</a> from this type of email<span class="az ba" style="padding-left: 4px; padding-right: 4px;">·</span>
+                                                    <a class="gw" href="https://medium.com/me/email-settings/4cbe58367505/3e98b8802f7c?type=social&amp;preference=2&amp;source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: underline;">Switch to the Weekly Digest</a>
+                                                    <span class="az ba" style="padding-left: 4px; padding-right: 4px;">·</span>
+                                                    <a class="gw" href="https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: underline;">Careers</a>
+                                                    <span class="az ba" style="padding-left: 4px; padding-right: 4px;">·</span>
+                                                    <a class="gw" href="https://help.medium.com/hc/en-us?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: underline;">Help Center</a>
+                                                    <span class="az ba" style="padding-left: 4px; padding-right: 4px;">·</span>
+                                                    <a class="gw" href="https://policy.medium.com/medium-privacy-policy-f03bf92035c9?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: underline;">Privacy Policy</a>
+                                                    <span class="az ba" style="padding-left: 4px; padding-right: 4px;">·</span>
+                                                    <a class="gw" href="https://policy.medium.com/medium-terms-of-service-9db0094a1e0f?source=email-4cbe58367505-1684829857390-digest.reader-------------------------2f274f2a_96fc_4871_9379_80c68c096bf5" style="color: inherit; text-decoration: underline;">Terms of service</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <img src="https://u1823144.ct.sendgrid.net/wf/open?upn=xrKFsieyB1OkxBbl2v6O4JLhgqTz5yxOvFv8oTP3JnpOEp5YiuV4eaZU6f5Qeuww0oe-2F5yncID8HFBaiJTRvKJTjUQSKXIZlLlzaelSmyaK5AUKpKKL4sfLCsC43U4PWMwyyKPZDJ7VWESJMrKlgm04Ma5uKAYmENCF7FmIU0IzG16wkjF7BZOL-2FR42DtaQzvSlkqgzlgszwqzCPFz9aFDBUJqqXG-2FAl9WMJiey0oD2IsC-2FHJYm-2ByeO3ta6g9nNGyy4thRuHgfB4wqqzpEEoOrIqqwUe-2BvnKkBPz7usHCk9YkkISZamRz5Ekow0eXfHFWGiocmd3Q7OTaikdAUEsZI1eLW6HYASQXZGpWptuQwXt-2BGwuY7ZZoWqTVp0fzIeqppV0othT6XClG5-2BpvqefBpg41WgHCMpazlFREAp26mk-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+         </body>
+            </html>
